@@ -14,6 +14,9 @@ public class OperatorFactory {
         operators.put("*", MultOp.getInstance());
         operators.put("/", DivOp.getInstance());
         operators.put("^", ExpOp.getInstance());
+        operators.put("\\sin", SinOp.getInstance());
+        operators.put("\\cos", CosOp.getInstance());
+        operators.put("\\sqrt", SqrtOp.getInstance());
     }
 
     public static OperatorFactory getInstance() {

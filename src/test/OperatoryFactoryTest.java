@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class OperatoryFactoryTest {
-    OperatorFactory opFact;
+    OperatorFactory opFact = OperatorFactory.getInstance();
 
     @Test
     public void testBasicOps() {

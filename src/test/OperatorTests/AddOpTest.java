@@ -1,11 +1,10 @@
 package test.OperatorTests;
 
-import Operators.*;
+import Operators.AddOp;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class AddOpTest {
-    OperatorFactory opFact;
     AddOp add = AddOp.getInstance();
 
     @Test
