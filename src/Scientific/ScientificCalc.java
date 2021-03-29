@@ -15,6 +15,7 @@ public class ScientificCalc {
         List<String> tokens = Tokenizer.parse(expression);
         Node expressionTree = BuildTree.createTree(tokens);
         UnaryOpNode root = new UnaryOpNode(expressionTree, opFact.getOperator(""));
-        return eval.visit(root);
+        Number result = eval.visit(root);
+        return Rounder.round(result, 12);
     }
 }
